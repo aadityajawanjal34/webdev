@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height:59px;
+}
+.center{
+    text-align: center;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#logo{
+    margin: 40px 23px;
+    height: 50px;
+    width: 50px;
+}
+#logo img{
+    height: 60px;
+    width: 60px;
+    filter: invert();
+
+}
+#navbar ul{
+display: flex;
+list-style-type: none;
+align-items: center;
+justify-content: center;
+height: 50px;
+width: 1200px;
+/* border: 2px solid white; */
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+    color: white;
+    border-radius: 12px;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+    height: 400px;
+    /* border: 2px solid black; */
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('food.jpg') no-repeat center center/cover;
+    height: 67.7%;
+    top:0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.h1-primary{
+    font-size: 3.0rem;
+    padding: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#home p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    margin: 17px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#btn:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    /* border: 2px solid red; */
+    /* margin: 54px 34px; */
+    padding: 30px 6px;
+    border-radius: 14px;
+    background:transparent
+
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 165px;
+}
+.services-container{
+    position: relative;
+}
+.services-container::before{
+    content: "";
+    background: url('org.jpg');
+    position:absolute;
+    height:107.5%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#client-section{
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+    background: url('flat.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+   
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 75px;
+}
+
+
+.contact{
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    background: url('org.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.6;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact-box input ,.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+.contact-box form{
+    width: 40%;
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    background-color: rgb(64, 46, 46);
+    color: white;
+padding:12px 12px
+}
